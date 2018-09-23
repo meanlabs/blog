@@ -1,35 +1,42 @@
-# Welcome to Amplified for Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Site
+name: "Mean Labs Learnings"
+description: "Things we've learnt, built or solved in our journey."
+meta_description: "Things we've learnt, built or solved in our journey."
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: /
+#google_analytics: ''
+#disqus: ''
+#mailchimp-list: ''
 
-# Site settings
-title: Mean Labs Learnings
-email: hello@meanlabs.io
-description: >
-  Things we've learnt, built or solved in our journey
-logo: "/assets/images/logo.png"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://meanlabs.io" # the base hostname & protocol for your site
-paginate:	5 # The number of posts to show per page on your homepage
+# Authors
+authors:
+  nick:
+    name: Nick
+    display_name: Nick
+    #gravatar: 
+    email: hello@meanlabs.io
+    web: https://meanlabs.io
+    #twitter: 
+    #description: ""
 
-name: 'Nick'
-bio: >
-  TBD
-#author_image: "/assets/images/author.jpg"
-#twitter_username: jekyllrb
-github_username:  nhoughto
-
-# Google Analytics
-analytics_id: ""
-
-# Build settings
-markdown: kramdown
-
-kramdown:
-  parse_block_html: true
-
-gems:
+# Plugins
+plugins: 
   - jekyll-paginate
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+highlighter: rouge

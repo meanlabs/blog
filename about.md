@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Mediumish Template for Jekyll
+comments: true
 ---
 
-
+TBD
