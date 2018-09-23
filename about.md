@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
-comments: true
+title: About us
+comments: false
 ---
 
 TBD

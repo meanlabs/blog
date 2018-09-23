@@ -1,7 +1,7 @@
 # Site
-name: "Mean Labs Learnings"
-description: "Things we've learnt, built or solved in our journey."
-meta_description: "Things we've learnt, built or solved in our journey."
+name: "Our learnings"
+description: "Things we've learnt, built or solved on our journey so far."
+meta_description: "Things we've learnt, built or solved on our journey so far."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /
